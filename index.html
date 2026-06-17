@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluciones Integradas SAS | Construcción y Remodelaciones</title>
+  <meta name="description" content="Empresa líder en construcción arquitectónica y remodelaciones premium. Diseñamos y construimos con los mejores materiales del mercado.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#inicio" class="logo-lockup">
+        <img class="logo-icon" src="assets/logo.svg.jpeg" width="32" height="32" alt="Logo" style="border-radius: 4px; object-fit: contain;">
+        <div class="logo-text">
+          <span class="company-name">SOLUCIONES INTEGRADAS <span class="accent-sas">SAS</span></span>
+          <span class="company-nit">NIT. 805.027.053-8</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto" class="btn-nav-contact">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher & Mobile Toggle -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema claro/oscuro">
+          <!-- Moon Icon (Dark Theme Active) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Theme Active) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#inicio" class="drawer-link">Inicio</a></li>
+      <li><a href="#nosotros" class="drawer-link">Nosotros</a></li>
+      <li><a href="#proyectos" class="drawer-link">Proyectos</a></li>
+      <li><a href="#clientes" class="drawer-link">Clientes</a></li>
+      <li><a href="#contacto" class="drawer-link btn-drawer-contact">Contáctanos</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section (Banner) -->
+    <section id="inicio" class="hero-section" style="background-image: linear-gradient(rgba(0, 20, 40, 0.45), rgba(15, 23, 42, 0.85)), url('assets/banner.jpg');">
+      <div class="hero-container">
+        <div class="hero-glass-card">
+          <span class="hero-tagline">Ingeniería &amp; Arquitectura</span>
+          <div class="hero-spacer"></div>
+          <h1 class="hero-title visually-hidden">CONSTRUYENDO EL FUTURO</h1>
+          <p class="hero-subtitle visually-hidden">Construcción · Proyectos · Soluciones</p>
+          <div class="hero-buttons">
+            <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
+            <a href="#contacto" class="btn-secondary">Asesoría de Remodelación</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-text">Desliza para explorar</span>
+      </div>
+    </section>
+
+    <!-- About Section (Nosotros & Materiales) -->
+    <section id="nosotros" class="about-section">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="section-badge">Calidad Certificada</span>
+            <h2 class="section-title">Materiales de Primera para Estructuras Eternas</h2>
+            <p class="section-desc">
+              En <strong>Soluciones Integradas SAS</strong>, creemos que la arquitectura excepcional comienza con los cimientos. Nos especializamos en la construcción de obras civiles estructurales y remodelaciones de alto nivel, asegurando que cada metro cuadrado refleje excelencia.
+            </p>
+            <p class="section-desc">
+              Nuestra política de calidad nos prohíbe el uso de materiales genéricos o de baja durabilidad. Trabajamos exclusivamente con marcas certificadas y especificaciones técnicas que superan las normativas de sismorresistencia NSR-10, garantizando acabados estéticos perfectos y resistencia ante el paso del tiempo.
+            </p>
+            
+            <!-- Value Cards -->
+            <div class="value-indicators">
+              <div class="value-item">
+                <div class="value-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h4>Garantía Estructural</h4>
+                  <p>Cimentación y acero de la más alta resistencia sismorresistente.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                </div>
+                <div>
+                  <h4>Acabados de Lujo</h4>
+                  <p>Mármoles importados, maderas tratadas e iluminación técnica LED.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-visuals">
+            <div class="visuals-card">
+              <div class="visuals-stat">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Años de Trayectoria</span>
+              </div>
+              <div class="visuals-text">
+                <h3>Compromiso y Precisión</h3>
+                <p>Nuestros ingenieros y arquitectos supervisan cada detalle desde la conceptualización hasta la entrega de llaves.</p>
+              </div>
+            </div>
+            <div class="visuals-decoration">
+              <div class="deco-dot"></div>
+              <div class="deco-ring"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="projects-section">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="section-badge">Portafolio</span>
+          <h2 class="section-title">Obras y Remodelaciones Recientes</h2>
+          <p class="section-subtitle-text">Cada proyecto es una muestra de nuestro compromiso con el diseño de vanguardia y el uso de los mejores materiales disponibles.</p>
+          
+          <!-- Category Filters -->
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">Todos los Proyectos</button>
+            <button class="filter-btn" data-filter="construccion">Construcción</button>
+            <button class="filter-btn" data-filter="remodelacion">Remodelación</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Residencia Moderna -->
+          <div class="project-card" data-category="construccion">
+            <div class="project-image-box">
+              <img src="assets/proyecto_residencial.png" alt="Residencia Moderna Premium" class="project-img">
+              <span class="project-badge">Construcción</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Residencia Moderna Premium</h3>
+              <p class="project-materials"><strong>Materiales Clave:</strong> Concreto arquitectónico estructurado de 4000 PSI, vigas de acero estructural ASTM A36, maderas duras de Teca seleccionadas para fachadas y ventanería termoacústica Duovent de doble acristalamiento.</p>
+              <p class="project-description">Una obra residencial minimalista que fusiona solidez y diseño biofílico. Los amplios vanos de luz exigen acero estructural certificado, permitiendo vanos de cristal sin soportes intermedios.</p>
+            </div>
+          </div>
+
+          <!-- Project 2: Cocina de Lujo -->
+          <div class="project-card" data-category="remodelacion">
+            <div class="project-image-box">
+              <img src="assets/remodelacion_cocina.png" alt="Cocina Gourmet Calacatta" class="project-img">
+              <span class="project-badge">Remodelación</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Cocina Gourmet Calacatta</h3>
+              <p class="project-materials"><strong>Materiales Clave:</strong> Placas de mármol de Carrara y cuarzo Calacatta de importación, herrajes de cierre suave Blum con garantía de por vida, grifería de diseño Hansgrohe y revestimiento en madera de roble europeo.</p>
+              <p class="project-description">Remodelación completa de un espacio culinario premium. Creamos una isla central monolítica en mármol con juntas invisibles, integrando tecnología de iluminación LED empotrada de bajo consumo.</p>
+            </div>
+          </div>
+
+          <!-- Project 3: Edificio Comercial -->
+          <div class="project-card" data-category="construccion">
+            <div class="project-image-box">
+              <img src="assets/proyecto_comercial.png" alt="Edificio Corporativo Glass &amp; Steel" class="project-img">
+              <span class="project-badge">Construcción</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Edificio Corporativo Glass &amp; Steel</h3>
+              <p class="project-materials"><strong>Materiales Clave:</strong> Columnas de acero reforzado de alta tenacidad, paneles de vidrio de control solar reflectante, cimentación profunda con pilotes de concreto de alta resistencia e impermeabilización asfáltica multicapa.</p>
+              <p class="project-description">Edificación comercial de 6 plantas diseñada bajo altos estándares de eficiencia energética y acústica. La fachada flotante autoportante disipa la carga térmica eficientemente.</p>
+            </div>
+          </div>
+
+          <!-- Project 4: Lobby Corporativo -->
+          <div class="project-card" data-category="remodelacion">
+            <div class="project-image-box">
+              <img src="assets/remodelacion_oficina.png" alt="Lobby y Oficinas Corporativas" class="project-img">
+              <span class="project-badge">Remodelación</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Lobby y Oficinas Corporativas</h3>
+              <p class="project-materials"><strong>Materiales Clave:</strong> Revestimientos murales acústicos en madera noble, pisos de mármol Travertino pulido mate de tráfico pesado, divisiones de oficinas en vidrio laminado templado de 10mm y perfilería de aluminio anonizado.</p>
+              <p class="project-description">Remodelación del hall de acceso principal de una firma corporativa. El diseño prioriza la acústica y el impacto visual premium con texturas naturales de madera y mármol.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clientes" class="clients-section">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="section-badge">Confianza Corporativa</span>
+          <h2 class="section-title">Algunos de Nuestros Clientes</h2>
+          <p class="section-subtitle-text">Hemos tenido el honor de desarrollar obras de remodelación y adecuaciones arquitectónicas comerciales para importantes marcas en Colombia.</p>
+        </div>
+
+        <!-- Clients Logo Grid -->
+        <div class="clients-grid">
+          
+          <!-- Client 1: Superinter -->
+          <div class="client-logo-card" title="Superinter">
+            <!-- SVG Logo for Superinter -->
+            <svg viewBox="0 0 200 100" class="client-logo-svg">
+              <ellipse cx="100" cy="50" rx="90" ry="40" fill="#E1251B" />
+              <ellipse cx="100" cy="50" rx="84" ry="34" fill="#0A3E8A" />
+              <!-- Outer glowing rim -->
+              <ellipse cx="100" cy="50" rx="82" ry="32" fill="none" stroke="#FFFFFF" stroke-width="2" />
+              <!-- Brand Text -->
+              <text x="100" y="44" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="24" fill="#F8C300" text-anchor="middle" font-style="italic">SÚPER</text>
+              <text x="100" y="72" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">INTER</text>
+            </svg>
+          </div>
+
+          <!-- Client 2: Almacenes Éxito -->
+          <div class="client-logo-card" title="Almacenes Éxito">
+            <!-- SVG Logo for Éxito -->
+            <svg viewBox="0 0 200 100" class="client-logo-svg">
+              <!-- Yellow rounded box matching Éxito brand -->
+              <rect x="10" y="20" width="180" height="60" rx="30" fill="#FCD116" />
+              <!-- Brand Text lowercase bold 'exito' -->
+              <text x="100" y="60" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="34" fill="#000000" text-anchor="middle">éxito</text>
+              <!-- Small red dot for the 'i' accent/dot character matching logo details -->
+              <circle cx="127" cy="34" r="5" fill="#E1251B" />
+            </svg>
+          </div>
+
+          <!-- Client 3: Carulla -->
+          <div class="client-logo-card" title="Carulla">
+            <!-- SVG Logo for Carulla -->
+            <svg viewBox="0 0 200 100" class="client-logo-svg">
+              <!-- Green circle representing the Carulla background -->
+              <circle cx="100" cy="50" r="42" fill="#0C632B" />
+              <!-- Clover shape leaf details -->
+              <path d="M 100,22 C 90,22 88,34 94,37 C 88,34 76,38 80,48 C 84,58 96,52 100,60 C 104,52 116,58 120,48 C 124,38 112,34 106,37 C 112,34 110,22 100,22 Z" fill="#FFFFFF" opacity="0.15" />
+              <!-- Brand Text lowercase 'carulla' -->
+              <text x="100" y="60" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF" text-anchor="middle">carulla</text>
+            </svg>
+          </div>
+
+          <!-- Client 4: América de Cali -->
+          <div class="client-logo-card" title="América de Cali S.A.">
+            <!-- SVG Logo for América de Cali -->
+            <svg viewBox="0 0 200 100" class="client-logo-svg">
+              <!-- Red shield of America de Cali -->
+              <path d="M 100,10 C 125,10 145,15 145,40 C 145,70 115,88 100,92 C 85,88 55,70 55,40 C 55,15 75,10 100,10 Z" fill="#E1251B" />
+              <!-- White inner shield -->
+              <path d="M 100,14 C 121,14 139,18 139,40 C 139,66 112,83 100,87 C 88,83 61,66 61,40 C 61,18 79,14 100,14 Z" fill="#FFFFFF" />
+              <!-- Red inner shape -->
+              <path d="M 100,18 C 117,18 133,22 133,40 C 133,62 109,78 100,82 C 91,78 67,62 67,40 C 67,22 83,18 100,18 Z" fill="#E1251B" />
+              <!-- Red Devil Silhouette or Big A -->
+              <text x="100" y="52" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="26" fill="#FFFFFF" text-anchor="middle">A</text>
+              <text x="100" y="70" font-family="'Outfit', 'Inter', sans-serif" font-weight="700" font-size="9" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">AMERICA</text>
+            </svg>
+          </div>
+
+          <!-- Client 5: Agromercados La Montaña -->
+          <div class="client-logo-card" title="Agromercados La Montaña">
+            <!-- SVG Logo for Agromercados La Montaña -->
+            <svg viewBox="0 0 200 100" class="client-logo-svg">
+              <!-- Mountain Shapes -->
+              <polygon points="65,60 90,20 115,60" fill="#0A6836" />
+              <polygon points="90,60 115,25 140,60" fill="#4CAF50" />
+              <polygon points="78,60 100,35 122,60" fill="#81C784" opacity="0.75" />
+              <!-- Text -->
+              <text x="100" y="76" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="13" fill="#2E7D32" text-anchor="middle" letter-spacing="0.5">LA MONTAÑA</text>
+              <text x="100" y="88" font-family="'Inter', sans-serif" font-weight="500" font-size="8" fill="#1B5E20" text-anchor="middle" letter-spacing="2">AGROMERCADOS</text>
+            </svg>
+          </div>
+
+          <!-- Client 6: Nutresa -->
+          <div class="client-logo-card" title="Grupo Nutresa">
+            <!-- SVG Logo for Nutresa -->
+            <svg viewBox="0 0 200 100" class="client-logo-svg">
+              <!-- Stylized Tree/Flower shape (Nutresa petals) -->
+              <g transform="translate(60, 24)">
+                <!-- Orange petal -->
+                <path d="M 0,26 C -8,18 -8,6 0,0 C 8,6 8,18 0,26 Z" fill="#E37222" transform="rotate(-40)" />
+                <!-- Green petal -->
+                <path d="M 0,26 C -8,18 -8,6 0,0 C 8,6 8,18 0,26 Z" fill="#4C9F38" transform="rotate(20)" />
+                <!-- Red petal -->
+                <path d="M 0,26 C -8,18 -8,6 0,0 C 8,6 8,18 0,26 Z" fill="#B31B1B" transform="translate(14, 8) rotate(70)" />
+                <!-- Yellow/Ochre petal -->
+                <path d="M 0,26 C -8,18 -8,6 0,0 C 8,6 8,18 0,26 Z" fill="#F5B324" transform="translate(-10, 8) rotate(-90)" />
+              </g>
+              <!-- Brand Text 'nutresa' -->
+              <text x="120" y="58" font-family="'Outfit', 'Inter', sans-serif" font-weight="700" font-size="22" fill="#2E3A47" text-anchor="middle">nutresa</text>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+      <div class="section-container">
+        <div class="contact-grid">
+          
+          <!-- Contact Info -->
+          <div class="contact-info-block">
+            <span class="section-badge">Hablemos de tu Proyecto</span>
+            <h2 class="section-title">¿Tienes una idea de construcción o remodelación?</h2>
+            <p class="section-desc">Ponte en contacto con nuestros ingenieros asesores. Realizamos cotizaciones con desglose detallado de materiales premium y cronogramas de obra realistas sin costo.</p>
+            
+            <div class="contact-methods">
+              <div class="method-item">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <h5>Línea de Atención</h5>
+                  <p><a href="tel:+573000000000">+57 300 123 4567</a></p>
+                </div>
+              </div>
+              <div class="method-item">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <h5>Correo Corporativo</h5>
+                  <p><a href="mailto:proyectos@solucionesintegradas.com.co">proyectos@solucionesintegradas.com.co</a></p>
+                </div>
+              </div>
+              <div class="method-item">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <h5>Sede Principal</h5>
+                  <p>Santiago de Cali, Valle del Cauca, Colombia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-block">
+            <form id="project-contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Nombre Completo</label>
+                  <input type="text" id="form-name" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-phone">Teléfono / WhatsApp</label>
+                  <input type="tel" id="form-phone" placeholder="Ej. 315 123 4567" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-email">Correo Electrónico</label>
+                <input type="email" id="form-email" placeholder="juan@ejemplo.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-service">Tipo de Servicio</label>
+                <select id="form-service" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="obra-nueva">Construcción Arquitectónica Obra Nueva</option>
+                  <option value="remodelacion-residencial">Remodelación Residencial (Casa/Apto)</option>
+                  <option value="adecuacion-comercial">Remodelación / Adecuación Comercial</option>
+                  <option value="consultoria">Estudio Técnico &amp; Diseño de Planos</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Detalles del Proyecto (Dimensiones, Plazos, Materiales deseados)</label>
+                <textarea id="form-message" rows="4" placeholder="Cuéntanos un poco sobre el área a intervenir y tu presupuesto aproximado..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <span>Enviar Solicitud de Asesoría</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        
+        <!-- Brand identity in footer -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <!-- Embedding Recreated Full Logo -->
+            <img src="assets/logo.svg.jpeg" alt="Soluciones Integradas SAS Logo" class="footer-logo-img" style="max-height: 50px; object-fit: contain;">
+          </div>
+          <p class="footer-tagline-text">Soluciones de ingeniería y arquitectura que trascienden generaciones. Construcciones con excelencia y los mejores materiales.</p>
+        </div>
+
+        <!-- Links column -->
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#clientes">Nuestros Clientes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Materials Highlight -->
+        <div class="footer-materials">
+          <h4>Estándares de Calidad</h4>
+          <p>Utilizamos concreto sismorresistente certificado, acero estructural ASTM, maderas nobles con trazabilidad legal y mármol natural importado. Supervisión bajo norma NSR-10.</p>
+          <div class="certification-badges">
+            <span class="cert-badge">NSR-10</span>
+            <span class="cert-badge">Materiales Premium</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Soluciones Integradas SAS. Todos los derechos reservados.</p>
+        <p class="footer-developer-credit">NIT. 805.027.053-8 · Cali, Colombia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Interactions -->
+  <script src="script.js"></script>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/573148688496?text=Hola%20Soluciones%20Integradas%20SAS,%20me%20gustaría%20solicitar%20una%20cotización." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat en WhatsApp">
+    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.66.986 3.294 1.503 5.35 1.505 5.548 0 10.064-4.512 10.068-10.066.002-2.69-1.043-5.22-2.943-7.124-1.9-1.902-4.428-2.95-7.12-2.952-5.552 0-10.068 4.513-10.072 10.068-.001 2.083.541 4.113 1.571 5.88l-1.03 3.766 3.876-1.017zm11.233-6.52c-.31-.154-1.826-.9-2.106-1.002-.28-.101-.484-.153-.688.154-.204.307-.79.998-.97 1.202-.18.205-.359.229-.668.076-.309-.154-1.305-.48-2.486-1.534-.919-.818-1.54-1.83-1.72-2.137-.18-.307-.018-.472.135-.624.137-.137.31-.359.464-.537.154-.18.204-.307.31-.512.103-.205.05-.384-.025-.537-.076-.154-.688-1.66-.943-2.274-.249-.597-.502-.516-.688-.527-.18-.011-.384-.012-.587-.012-.204 0-.536.077-.817.384-.281.307-1.072 1.05-1.072 2.56 0 1.51 1.1 2.97 1.25 3.17.153.206 2.164 3.303 5.241 4.634.731.317 1.302.507 1.748.65.735.234 1.4.2 1.928.122.589-.088 1.826-.747 2.081-1.468.256-.721.256-1.342.18-1.468-.077-.128-.281-.205-.59-.359z"/>
+    </svg>
+  </a>
+</body>
+</html>
