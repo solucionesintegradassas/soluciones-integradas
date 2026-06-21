@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (savedTheme) {
     htmlElement.setAttribute('data-theme', savedTheme);
   } else {
-    // If no preference is saved, default to 'dark' for premium architectural vibe
-    htmlElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
+    // If no preference is saved, default to 'light'
+    htmlElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
   }
 
   // Toggle Theme Function
