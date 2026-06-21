@@ -1114,12 +1114,45 @@ button {
   gap: 20px;
 }
 
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
 .footer-logo-img {
-  height: 70px;
+  height: 120px;  /* Doble del tamaño anterior */
   width: auto;
-  align-self: flex-start;
-  /* Dynamically enforce white logo text in the dark footer */
-  --text-color: #FFFFFF;
+  object-fit: contain;
+}
+
+/* Título corporativo SOLUCIONES INTEGRADAS SAS */
+.footer-brand-name {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-brand-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(14px, 1.5vw, 18px);
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.footer-brand-sas {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: clamp(14px, 1.5vw, 18px);
+  letter-spacing: 0.1em;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .footer-tagline-text {
