@@ -13,16 +13,6 @@
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- EmailJS SDK (envío de correos sin backend) -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    // Inicializar EmailJS con la Public Key de tu cuenta
-    // PASO 3: reemplaza 'TU_PUBLIC_KEY' con tu clave real de emailjs.com
-    (function(){
-      emailjs.init({ publicKey: 'TU_PUBLIC_KEY' });
-    })();
-  </script>
 </head>
 <body>
 
@@ -338,26 +328,38 @@
 
           <!-- Contact Form -->
           <div class="contact-form-block">
-            <form id="project-contact-form" class="contact-form">
+            <form
+              id="project-contact-form"
+              class="contact-form"
+              action="https://formsubmit.co/solucionesintegradas2026@gmail.com"
+              method="POST"
+            >
+              <!-- Configuracion FormSubmit -->
+              <input type="hidden" name="_subject" value="Nueva solicitud de asesoría - Soluciones Integradas SAS">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://solucionesintegradassas.github.io/soluciones-integradas/gracias.html">
+              <!-- Anti-spam honeypot -->
+              <input type="text" name="_honey" style="display:none">
               <div class="form-row">
                 <div class="form-group">
                   <label for="form-name">Nombre Completo</label>
-                  <input type="text" id="form-name" placeholder="Ej. Juan Pérez" required>
+                  <input type="text" id="form-name" name="Nombre" placeholder="Ej. Juan Pérez" required>
                 </div>
                 <div class="form-group">
                   <label for="form-phone">Teléfono / WhatsApp</label>
-                  <input type="tel" id="form-phone" placeholder="Ej. 315 123 4567" required>
+                  <input type="tel" id="form-phone" name="Teléfono" placeholder="Ej. 315 123 4567" required>
                 </div>
               </div>
               
               <div class="form-group">
                 <label for="form-email">Correo Electrónico</label>
-                <input type="email" id="form-email" placeholder="juan@ejemplo.com" required>
+                <input type="email" id="form-email" name="Email" placeholder="juan@ejemplo.com" required>
               </div>
 
               <div class="form-group">
                 <label for="form-service">Tipo de Servicio</label>
-                <select id="form-service" required>
+                <select id="form-service" name="Servicio" required>
                   <option value="" disabled selected>Selecciona una opción</option>
                   <option value="obra-nueva">Construcción Arquitectónica Obra Nueva</option>
                   <option value="remodelacion-residencial">Remodelación Residencial (Casa/Apto)</option>
@@ -368,7 +370,7 @@
 
               <div class="form-group">
                 <label for="form-message">Detalles del Proyecto (Dimensiones, Plazos, Materiales deseados)</label>
-                <textarea id="form-message" rows="4" placeholder="Cuéntanos un poco sobre el área a intervenir y tu presupuesto aproximado..." required></textarea>
+                <textarea id="form-message" name="Mensaje" rows="4" placeholder="Cuéntanos un poco sobre el área a intervenir y tu presupuesto aproximado..." required></textarea>
               </div>
 
               <button type="submit" id="btn-submit" class="btn-submit">
