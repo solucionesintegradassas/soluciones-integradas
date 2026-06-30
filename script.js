@@ -185,4 +185,52 @@ document.addEventListener('DOMContentLoaded', () => {
   revealElements.forEach(el => {
     revealObserver.observe(el);
   });
+
+  // ==========================================================================
+  // 6. Lightbox – Visor de imágenes a pantalla completa
+  // ==========================================================================
+  const overlay      = document.getElementById('lightbox-overlay');
+  const lightboxImg  = document.getElementById('lightbox-img');
+  const lightboxCap  = document.getElementById('lightbox-caption');
+  const closeBtn     = document.getElementById('lightbox-close');
+
+  /** Abre el lightbox con la imagen y título dados */
+  function openLightbox(src, alt, title) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightboxCap.textContent = title || alt || '';
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // evitar scroll de fondo
+  }
+
+  /** Cierra el lightbox */
+  function closeLightbox() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    // Limpia src con retardo para que la animación de salida no rompa
+    setTimeout(() => { lightboxImg.src = ''; }, 300);
+  }
+
+  // Clic en cada imagen con clase lightbox-trigger
+  document.querySelectorAll('.lightbox-trigger').forEach(img => {
+    img.addEventListener('click', () => {
+      openLightbox(img.src, img.alt, img.dataset.title);
+    });
+  });
+
+  // Cerrar con el botón ×
+  closeBtn.addEventListener('click', closeLightbox);
+
+  // Cerrar haciendo clic en el fondo oscuro (fuera de la imagen)
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeLightbox();
+  });
+
+  // Cerrar con la tecla Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+
 });

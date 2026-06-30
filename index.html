@@ -225,8 +225,9 @@
           <!-- Project 1: Residencia Moderna -->
           <div class="project-card" data-category="construccion">
             <div class="project-image-box">
-              <img src="assets/baño.png" alt="Remodelacion Moderna de Interiores" class="project-img">
+              <img src="assets/baño.png" alt="Remodelacion Moderna de Interiores" class="project-img lightbox-trigger" data-title="Remodelacion Moderna de Interiores">
               <span class="project-badge">Construcción</span>
+              <span class="lightbox-hint">🔍 Clic para ampliar</span>
             </div>
             <div class="project-info">
               <h3 class="project-title">Remodelacion Moderna de Interiores</h3>
@@ -238,8 +239,9 @@
           <!-- Project 2: Cocina de Lujo -->
           <div class="project-card" data-category="remodelacion">
             <div class="project-image-box">
-              <img src="assets/remodelacion_cocina.png" alt="Cocina Gourmet Calacatta" class="project-img">
+              <img src="assets/remodelacion_cocina.png" alt="Cocina Gourmet Calacatta" class="project-img lightbox-trigger" data-title="Cocina Gourmet Calacatta">
               <span class="project-badge">Remodelación</span>
+              <span class="lightbox-hint">🔍 Clic para ampliar</span>
             </div>
             <div class="project-info">
               <h3 class="project-title">Cocina Gourmet Calacatta</h3>
@@ -251,8 +253,9 @@
           <!-- Project 3: Edificio Comercial -->
           <div class="project-card" data-category="construccion">
             <div class="project-image-box">
-              <img src="assets/Aquarela.png" alt="cielo raso aquarela &amp; Steel" class="project-img">
+              <img src="assets/Aquarela.png" alt="cielo raso aquarela &amp; Steel" class="project-img lightbox-trigger" data-title="Adecuacion de cielo raso en PVC">
               <span class="project-badge">Construcción</span>
+              <span class="lightbox-hint">🔍 Clic para ampliar</span>
             </div>
             <div class="project-info">
               <h3 class="project-title">Adecuacion de cielo raso en PVC </h3>
@@ -264,8 +267,9 @@
           <!-- Project 4: Lobby Corporativo -->
           <div class="project-card" data-category="remodelacion">
             <div class="project-image-box">
-              <img src="assets/remodelacion_oficina.png" alt="Lobby y Oficinas Corporativas" class="project-img">
+              <img src="assets/remodelacion_oficina.png" alt="Lobby y Oficinas Corporativas" class="project-img lightbox-trigger" data-title="Lobby y Oficinas Corporativas">
               <span class="project-badge">Remodelación</span>
+              <span class="lightbox-hint">🔍 Clic para ampliar</span>
             </div>
             <div class="project-info">
               <h3 class="project-title">Lobby y Oficinas Corporativas</h3>
@@ -429,5 +433,14 @@
       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.66.986 3.294 1.503 5.35 1.505 5.548 0 10.064-4.512 10.068-10.066.002-2.69-1.043-5.22-2.943-7.124-1.9-1.902-4.428-2.95-7.12-2.952-5.552 0-10.068 4.513-10.072 10.068-.001 2.083.541 4.113 1.571 5.88l-1.03 3.766 3.876-1.017zm11.233-6.52c-.31-.154-1.826-.9-2.106-1.002-.28-.101-.484-.153-.688.154-.204.307-.79.998-.97 1.202-.18.205-.359.229-.668.076-.309-.154-1.305-.48-2.486-1.534-.919-.818-1.54-1.83-1.72-2.137-.18-.307-.018-.472.135-.624.137-.137.31-.359.464-.537.154-.18.204-.307.31-.512.103-.205.05-.384-.025-.537-.076-.154-.688-1.66-.943-2.274-.249-.597-.502-.516-.688-.527-.18-.011-.384-.012-.587-.012-.204 0-.536.077-.817.384-.281.307-1.072 1.05-1.072 2.56 0 1.51 1.1 2.97 1.25 3.17.153.206 2.164 3.303 5.241 4.634.731.317 1.302.507 1.748.65.735.234 1.4.2 1.928.122.589-.088 1.826-.747 2.081-1.468.256-.721.256-1.342.18-1.468-.077-.128-.281-.205-.59-.359z"/>
     </svg>
   </a>
+  <!-- Lightbox Modal -->
+  <div id="lightbox-overlay" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" class="lightbox-image">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
 </body>
 </html>
