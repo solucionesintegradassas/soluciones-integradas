@@ -127,25 +127,65 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================================================
-  // 5. Contact Form Validation and Submission
+  // 5. Contact Form – Envío real con EmailJS
   // ==========================================================================
-  const contactForm = document.getElementById('project-contact-form');
-  
+  // IMPORTANTE: reemplaza estos valores con los de tu cuenta en emailjs.com
+  const EMAILJS_SERVICE_ID  = 'TU_SERVICE_ID';   // Ej: 'service_abc123'
+  const EMAILJS_TEMPLATE_ID = 'TU_TEMPLATE_ID';  // Ej: 'template_xyz789'
+
+  const contactForm  = document.getElementById('project-contact-form');
+  const btnSubmit    = document.getElementById('btn-submit');
+  const btnText      = document.getElementById('btn-submit-text');
+  const formStatus   = document.getElementById('form-status');
+
+  function setStatus(type, msg) {
+    formStatus.className = 'form-status ' + type; // 'success' | 'error'
+    formStatus.textContent = msg;
+  }
+
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
-      // Get form fields
-      const name = document.getElementById('form-name').value;
-      const phone = document.getElementById('form-phone').value;
-      const email = document.getElementById('form-email').value;
-      const service = document.getElementById('form-service').options[document.getElementById('form-service').selectedIndex].text;
-      
-      // Show success modal/alert
-      alert(`¡Muchas gracias, ${name}!\n\nHemos recibido correctamente tu solicitud de asesoría técnica para el servicio de:\n"${service}".\n\nUno de nuestros ingenieros se pondrá en contacto contigo en el teléfono ${phone} o al correo ${email} en las próximas 24 horas hábiles para coordinar los detalles.`);
-      
-      // Reset form
-      contactForm.reset();
+
+      // Datos del formulario
+      const name    = document.getElementById('form-name').value.trim();
+      const phone   = document.getElementById('form-phone').value.trim();
+      const email   = document.getElementById('form-email').value.trim();
+      const service = document.getElementById('form-service');
+      const serviceText = service.options[service.selectedIndex].text;
+      const message = document.getElementById('form-message').value.trim();
+
+      // Estado: enviando…
+      btnSubmit.disabled = true;
+      btnText.textContent = 'Enviando…';
+      formStatus.className = 'form-status';
+      formStatus.textContent = '';
+
+      // Parámetros que coinciden con las variables del template de EmailJS
+      const templateParams = {
+        from_name:    name,
+        from_phone:   phone,
+        from_email:   email,
+        service_type: serviceText,
+        message:      message,
+        to_email:     'solucionesintegradas2026@gmail.com'
+      };
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+        .then(() => {
+          setStatus('success',
+            '✅ ¡Mensaje enviado! Nos pondremos en contacto contigo en las próximas 24 horas hábiles.');
+          contactForm.reset();
+        })
+        .catch((err) => {
+          console.error('EmailJS error:', err);
+          setStatus('error',
+            '❌ Ocurrió un error al enviar. Por favor escríbenos directamente a solucionesintegradas2026@gmail.com');
+        })
+        .finally(() => {
+          btnSubmit.disabled = false;
+          btnText.textContent = 'Enviar Solicitud de Asesoría';
+        });
     });
   }
 
